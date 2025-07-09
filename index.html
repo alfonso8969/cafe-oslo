@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Café Oslo, ven a desayunar productos frescos todos los días</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- importar fuentes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- reseteo de estilos css -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- mediaqueries -->
+    <link rel="stylesheet" href="css/mediaqueries.css">
+
+
+</head>
+
+
+<body>
+
+    <!-- header principal -->
+    <header class="main-header">
+
+        <!-- header superior -->
+        <div class="main-header__top-bar flex ancho-maximo">
+            <!-- 1. logo -->
+            <div class="main-header__logo">
+                <img src="images/logo.png" alt="Logotipo de Café Oslo">
+            </div>
+
+            <!-- 2. menu -->
+            <nav class="main-nav"> <!-- lo consideramos un bloque independiente aunque esté dentro de header -->
+
+                <div class="main-nav__menutrigger">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </div>
+
+                <ul class="main-nav__list flex">
+                    <li>
+                        <a href="#">EL ESPACIO</a>
+                    </li>
+
+                    <li>
+                        <a href="#">PRODUCTOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">OFERTAS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">RESERVAS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONTACTO</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <!--   header inferior -->
+        <div class="main-header__bottom-bar ancho-maximo">
+            <h1 class="main-header__titulo">RECIÉN HECHO,<br>TODOS LOS DÍAS</h1>
+
+            <div class="separador"></div>
+
+            <p class="main-header__descripcion"> ¡Bienvenido a Café Oslo! Tu refugio de sabor y bienestar en el corazón
+                de la ciudad. El aroma del café ecológico se mezcla con el pan recién horneado. Descubre nuestras tartas
+                y dulces elaborados con mimo</p>
+        </div>
+
+    </header>
+
+    <!-- contenido principal -->
+    <main>
+
+        <div class="ancho-maximo">
+            <!-- contenedor con dos columnas -->
+            <div class="flex col-2">
+
+                <!-- 1. brunch -->
+                <section class="zonaRoja">
+                    <h2>VEN AL BRUNCH DE<br>LOS DOMINGOS</h2>
+                    <p>¡La mejor manera de empezar tu domingo! Disfruta de nuestro delicioso Brunch en Café Oslo, con
+                        pan recién horneado, dulces, tartas y opciones saladas, todo con ingredientes ecológicos. </p>
+                </section>
+
+                <!-- 2. fiestas -->
+                <section class="zonaCrema">
+                    <h2>CELEBRA TUS FIESTAS<br>CON NOSOTROS</h2>
+                    <p>¡Celebra tu día especial en Café Oslo! Disfruta de un ambiente único, pan recién horneado,
+                        tartas, dulces y más. ¡Contacta para organizar tu evento ideal y memorable!</p>
+                </section>
+            </div> <!-- fin contenedor dos columnas -->
+
+            <!-- desayunar -->
+            <section class="desayunar">
+                <h2>VEN A DESAYUNAR</h2>
+                <div class="separador"></div>
+                <p>¡Empieza el día con alegría en Café Oslo! Disfruta nuestro pan recién horneado, dulces y tartas. <br>
+                    El desayuno perfecto te espera.</p>
+                <a href="#" class="boton">DESCUBRE NUESTROS PRODUCTOS</a>
+            </section>
+
+            <!-- contenedor con dos columnas -->
+            <div class="contenedor-productos flex col-2 gapped">
+
+                <!-- 1.pan -->
+                <section class="producto">
+
+                    <!-- icono -->
+                    <div class="producto__icono">
+                        <img src="images/Icono1.png" alt="">
+                    </div>
+
+                    <!-- info  -->
+                    <h2 class="producto__titulo">PAN RECIÉN HECHO</h2>
+
+                    <figure class="producto__imagen">
+                        <img src="images/pan.jpg" alt="pan artesano">
+                    </figure>
+
+                    <div class="producto__descripcion">
+                        <p>En Café Oslo, cada hogaza de pan recién horneadoes una obra de arte.
+                            Nuestra <strong>masa madre</strong>, nutrida con paciencia, le confiere ese sabor profundo y
+                            esa corteza crujiente que tanto amas.
+                        </p>
+
+                        <p>Nuestro pan es el resultado de horas de <strong>fermentación lenta</strong>, dedicación y la
+                            magia de lo
+                            artesanal. ¡El aroma y sabor te envolverá!</p>
+                    </div>
+                </section>
+
+                <!-- 2. tartas -->
+                <section class="producto">
+
+                    <!-- icono -->
+                    <div class="producto__icono">
+                        <img src="images/Icono2.png" alt="">
+                    </div>
+
+                    <!-- info  -->
+                    <h2 class="producto__titulo">TARTAS PARA CADA DÍA</h2>
+
+                    <figure class="producto__imagen">
+                        <img src="images/tarta.jpg" alt="pan artesano">
+                    </figure>
+
+                    <div class="producto__descripcion">
+                        <p>Nuestras <strong>tartas artesanales</strong> son pura pasión. Cada una se elabora con los
+                            mejores ingredientes, seleccionados con mimo para asegurar una calidad excepcional. </p>
+                        <p>Desde la fruta fresca de temporada hasta el chocolate más puro , cada bocado
+                            refleja el cuidado y la tradición de la repostería hecha a mano. ¡Un verdadero placer para
+                            tus sentidos!</p>
+                    </div>
+                </section>
+
+
+                <!-- 3. dulces -->
+                <section class="producto">
+
+                    <!-- icono -->
+                    <div class="producto__icono">
+                        <img src="images/Icono3.png" alt="">
+                    </div>
+
+                    <!-- info  -->
+                    <h2 class="producto__titulo">PRUEBA NUESTROS DULCES</h2>
+
+                    <figure class="producto__imagen">
+                        <img src="images/dulces.jpg" alt="pan artesano">
+                    </figure>
+
+                    <div class="producto__descripcion">
+                        <p> Cada dulce es una pequeña obra maestra. Los elaboramos con las <strong>mejores materias
+                                primas</strong>,
+                            seleccionando cuidadosamente cada ingrediente. </p>
+                        <p>Con recetas tradicionales y un toque de creatividad, conseguimos ese sabor
+                            casero y esa textura perfecta que tanto gusta. ¡Disfruta de un momento dulce, hecho con amor
+                            y calidad!
+                        </p>
+                    </div>
+                </section>
+
+
+                <!-- 4.  ecologicos-->
+
+                <section class="producto">
+
+                    <!-- icono -->
+                    <div class="producto__icono">
+                        <img src="images/Icono4.png" alt="">
+                    </div>
+
+                    <!-- info  -->
+                    <h2 class="producto__titulo">INGREDIENTES ECOLÓGICOS</h2>
+
+                    <figure class="producto__imagen">
+                        <img src="images/ecologico.jpg" alt="pan artesano">
+                    </figure>
+
+                    <div class="producto__descripcion">
+                        <p>La calidad empieza en el origen y para nuestro pan, dulces, tartas y hasta el café,
+                            <strong>elegimos solo ingredientes ecológicos</strong>.
+                        </p>
+                        <p>Así garantizamos sabores más puros y el respeto por el medio ambiente. Cada bocado y sorbo
+                            es un compromiso con tu bienestar y con la
+                            naturaleza. ¡Sabor consciente en Madrid! </p>
+                    </div>
+                </section>
+
+
+            </div> <!-- fin contenedor dos columnas -->
+
+            <!-- contenedor con dos columnas -->
+            <div class="flex col-2">
+                <!-- contacta -->
+                <section class="zonaCrema ">
+                    <h2>CONTACTA CON NOSOTROS</h2>
+                    <address>
+                        <p>Si quieres hacer una reserva, tienes alguna sugerencia o simplemente quieres saludar,
+                            escríbenos
+                            a:
+                            <a href=mailto:cafeoslo@cafeoslo.es>cafeoslo@cafeoslo.es</a>
+                        </p>
+                    </address>
+                </section>
+
+                <!-- donde estamos -->
+                <section class="zonaRoja ">
+                    <h2>¿SABES DÓNDE ESTAMOS?</h2>
+                    <address>
+                        <p>C/ Mayor, 15. Madrid</p>
+                        <p>Llámanos: <a href="tel:+34914448899">914 448 899</a></p>
+                    </address>
+                </section>
+            </div> <!-- fin contenedor dos columnas -->
+        </div> <!-- fin ancho-maximo -->
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Café Oslo.<br>Todos los derechos reservados</p>
+    </footer>
+
+
+</body>
+
+</html>
