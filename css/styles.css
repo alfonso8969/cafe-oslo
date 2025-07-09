@@ -53,6 +53,13 @@ address {
     font-size: .9rem;
 }
 
+.btn:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: #f5f0ed;
+    border-color: #f5f0ed;
+}
+
+
 /* Estructura */
 .max-width {
     max-width: 1300px;
@@ -65,8 +72,14 @@ address {
     flex-wrap: wrap;
 }
 
-.flex.col-2>* {
+.flex.col-2 > * {
     flex-basis: 50%;
+}
+
+.gapped {
+    /* gap: 0.2em; */
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 /* Header y navegación */
@@ -148,6 +161,14 @@ main {
     line-height: 1.2; 
 }
 
+.zonaRoja a {
+    color: #f5f0ed;
+}
+
+.zonaCrema a {
+    color: #9d3538;
+}
+
 /* Desayunar */
 .desayunar {
     padding: 3em 1em;  /* 3em = 48px, 1em = 16px */
@@ -180,5 +201,19 @@ main {
 }
 
 .product {
-    flex-basis: 48%;
+    flex-basis: 48% !important;
+}
+
+
+/* footer */
+.main-footer {
+    padding: 2em;
+    background-color: transparent;
+    color: #f5f0ed;
+    text-align: center;
+}
+
+.main-footer p {
+    font-size: 1.5rem; /* 1.5em = 24px */
+    font-weight: 400;
 }
