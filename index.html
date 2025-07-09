@@ -31,7 +31,7 @@
     <header class="main-header">
 
         <!-- header superior -->
-        <div class="main-header__top-bar flex ancho-maximo">
+        <div class="main-header__top-bar flex max-width">
             <!-- 1. logo -->
             <div class="main-header__logo">
                 <img src="images/logo.png" alt="Logotipo de Café Oslo">
@@ -40,13 +40,13 @@
             <!-- 2. menu -->
             <nav class="main-nav"> <!-- lo consideramos un bloque independiente aunque esté dentro de header -->
 
-                <div class="main-nav__menutrigger">
+                <!-- <div class="main-nav__menutrigger">
                     <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        viewBox="0 0 448 512">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
-                </div>
+                </div> -->
 
                 <ul class="main-nav__list flex">
                     <li>
@@ -73,13 +73,13 @@
             </nav>
         </div>
 
-        <!--   header inferior -->
-        <div class="main-header__bottom-bar ancho-maximo">
+        <!-- header inferior -->
+        <div class="main-header__bottom-bar max-width">
             <h1 class="main-header__titulo">RECIÉN HECHO,<br>TODOS LOS DÍAS</h1>
 
             <div class="separador"></div>
 
-            <p class="main-header__descripcion"> ¡Bienvenido a Café Oslo! Tu refugio de sabor y bienestar en el corazón
+            <p class="main-header__description"> ¡Bienvenido a Café Oslo! Tu refugio de sabor y bienestar en el corazón
                 de la ciudad. El aroma del café ecológico se mezcla con el pan recién horneado. Descubre nuestras tartas
                 y dulces elaborados con mimo</p>
         </div>
@@ -89,7 +89,7 @@
     <!-- contenido principal -->
     <main>
 
-        <div class="ancho-maximo">
+        <div class="max-width">
             <!-- contenedor con dos columnas -->
             <div class="flex col-2">
 
@@ -114,28 +114,28 @@
                 <div class="separador"></div>
                 <p>¡Empieza el día con alegría en Café Oslo! Disfruta nuestro pan recién horneado, dulces y tartas. <br>
                     El desayuno perfecto te espera.</p>
-                <a href="#" class="boton">DESCUBRE NUESTROS PRODUCTOS</a>
+                <a href="#" class="btn">DESCUBRE NUESTROS PRODUCTOS</a>
             </section>
 
             <!-- contenedor con dos columnas -->
-            <div class="contenedor-productos flex col-2 gapped">
+            <div class="products-container flex col-2 gapped">
 
                 <!-- 1.pan -->
-                <section class="producto">
+                <section class="product">
 
                     <!-- icono -->
-                    <div class="producto__icono">
+                    <div class="product__icon">
                         <img src="images/Icono1.png" alt="">
                     </div>
 
                     <!-- info  -->
-                    <h2 class="producto__titulo">PAN RECIÉN HECHO</h2>
+                    <h2 class="product__title">PAN RECIÉN HECHO</h2>
 
-                    <figure class="producto__imagen">
+                    <figure class="product__image">
                         <img src="images/pan.jpg" alt="pan artesano">
                     </figure>
 
-                    <div class="producto__descripcion">
+                    <div class="product__description">
                         <p>En Café Oslo, cada hogaza de pan recién horneadoes una obra de arte.
                             Nuestra <strong>masa madre</strong>, nutrida con paciencia, le confiere ese sabor profundo y
                             esa corteza crujiente que tanto amas.
@@ -148,21 +148,21 @@
                 </section>
 
                 <!-- 2. tartas -->
-                <section class="producto">
+                <section class="product">
 
                     <!-- icono -->
-                    <div class="producto__icono">
+                    <div class="product__icon">
                         <img src="images/Icono2.png" alt="">
                     </div>
 
                     <!-- info  -->
-                    <h2 class="producto__titulo">TARTAS PARA CADA DÍA</h2>
+                    <h2 class="product__title">TARTAS PARA CADA DÍA</h2>
 
-                    <figure class="producto__imagen">
+                    <figure class="product__image">
                         <img src="images/tarta.jpg" alt="pan artesano">
                     </figure>
 
-                    <div class="producto__descripcion">
+                    <div class="product__description">
                         <p>Nuestras <strong>tartas artesanales</strong> son pura pasión. Cada una se elabora con los
                             mejores ingredientes, seleccionados con mimo para asegurar una calidad excepcional. </p>
                         <p>Desde la fruta fresca de temporada hasta el chocolate más puro , cada bocado
@@ -173,21 +173,21 @@
 
 
                 <!-- 3. dulces -->
-                <section class="producto">
+                <section class="product">
 
                     <!-- icono -->
-                    <div class="producto__icono">
+                    <div class="product__icon">
                         <img src="images/Icono3.png" alt="">
                     </div>
 
                     <!-- info  -->
-                    <h2 class="producto__titulo">PRUEBA NUESTROS DULCES</h2>
+                    <h2 class="product__title">PRUEBA NUESTROS DULCES</h2>
 
-                    <figure class="producto__imagen">
+                    <figure class="product__image">
                         <img src="images/dulces.jpg" alt="pan artesano">
                     </figure>
 
-                    <div class="producto__descripcion">
+                    <div class="product__description">
                         <p> Cada dulce es una pequeña obra maestra. Los elaboramos con las <strong>mejores materias
                                 primas</strong>,
                             seleccionando cuidadosamente cada ingrediente. </p>
@@ -199,23 +199,23 @@
                 </section>
 
 
-                <!-- 4.  ecologicos-->
+                <!-- 4.  ecológicos-->
 
-                <section class="producto">
+                <section class="product">
 
                     <!-- icono -->
-                    <div class="producto__icono">
+                    <div class="product__icon">
                         <img src="images/Icono4.png" alt="">
                     </div>
 
                     <!-- info  -->
-                    <h2 class="producto__titulo">INGREDIENTES ECOLÓGICOS</h2>
+                    <h2 class="product__title">INGREDIENTES ECOLÓGICOS</h2>
 
-                    <figure class="producto__imagen">
+                    <figure class="product__image">
                         <img src="images/ecologico.jpg" alt="pan artesano">
                     </figure>
 
-                    <div class="producto__descripcion">
+                    <div class="product__description">
                         <p>La calidad empieza en el origen y para nuestro pan, dulces, tartas y hasta el café,
                             <strong>elegimos solo ingredientes ecológicos</strong>.
                         </p>
@@ -251,7 +251,7 @@
                     </address>
                 </section>
             </div> <!-- fin contenedor dos columnas -->
-        </div> <!-- fin ancho-maximo -->
+        </div> <!-- fin max-width -->
     </main>
 
     <footer class="main-footer">

@@ -1,0 +1,184 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.1em;
+    /* 1em = 16px, por lo que 1.1em = 17.6px */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    /* 1.5em = 26.4px */
+    background: url('../images/fondo.webp') fixed no-repeat center bottom/cover, #683721;
+    color: #343434;
+}
+
+h1,
+h2,
+ul,
+li,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.separador {
+    height: 2px;
+    margin: 1.2em auto;
+    /* 1.2em = 20.16px */
+    width: clamp(150px, 35%, 350px);
+    background-color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 0.5em 1.5em; /* 0.5em = 8px, 1.5em = 24px */
+    background: rgba(0, 0, 0, 0.2);
+    color: #f5f0ed;
+    text-decoration: none;
+    font-weight: 400;
+    border: 3px solid #f5f0ed;
+    font-size: .9rem;
+}
+
+/* Estructura */
+.max-width {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex.col-2>* {
+    flex-basis: 50%;
+}
+
+/* Header y navegación */
+/* header principal */
+.main-header {
+    padding: 2.5em;
+    /* 2.5em = 44px */
+    background: url('../images/fondo1.jpg') center/cover no-repeat, #343434;
+    color: #f5f0ed;
+    text-align: center;
+}
+
+/* header superior */
+.main-header__top-bar.flex {
+    align-items: flex-end;
+}
+
+/* navegación principal */
+.main-nav__list {
+    column-gap: 1em;
+}
+
+.main-nav__list a {
+    color: #f5f0ed;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9rem;
+    /* 0.9em = 15.36px */
+}
+
+.main-nav__list a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* header inferior */
+.main-header__bottom-bar {
+    margin-top: 2.5em;
+}
+
+.main-header__titulo {
+    font-size: clamp(2rem, 7dvw, 3.5rem);
+    /* 2rem = 32px, 3.5rem = 56px */
+    line-height: 1.3em;
+    /* 1.3em = 22.88px */
+}
+
+.main-header__description {
+    font-size: 1.2rem;
+    /* 1.2em = 19.2px */
+    font-weight: 600;
+}
+
+/* Main y secciones */
+
+main {
+    margin-top: 48px;
+}
+
+/* Zona roja y zona crema */
+.zonaRoja {
+    background-color: #9d3538;
+    color: #ded6c0;
+}
+
+.zonaCrema {
+    background-color: #ded6c0;
+    color: #9d3538;
+}
+
+.zonaRoja,
+.zonaCrema {
+    padding: 2em 1em;  /* 2em = 32px, 1em = 16px */
+    text-align: center;
+}
+
+.zonaRoja h2,
+.zonaCrema h2 {
+    font-size: 1.4rem;  /* 1.4em = 22.4px */
+    line-height: 1.2; 
+}
+
+/* Desayunar */
+.desayunar {
+    padding: 3em 1em;  /* 3em = 48px, 1em = 16px */
+    background: url('../images/fondo2.jpg') center/cover no-repeat, #817e7d;
+    text-align: center;
+    color: #f5f0ed;
+}
+
+/* Desayunar h2 */
+.desayunar h2 {
+    font-size: clamp(1.6rem, 4dvw, 3rem);    /* 1.6rem = 25.6px, 3rem = 48px */
+}
+
+/* Productos */
+.products-container {
+    padding: 4em;
+    background: #fff;
+}
+
+.product__image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product__icon img {
+    width: 80px;
+    height: auto;
+}
+
+.product {
+    flex-basis: 48%;
+}
