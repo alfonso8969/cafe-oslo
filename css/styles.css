@@ -165,9 +165,20 @@ main {
     color: #f5f0ed;
 }
 
+.zonaRoja a:hover {
+    color: #772cda;
+}
+
 .zonaCrema a {
     color: #9d3538;
 }
+
+.zonaCrema a:hover {
+    color: #772cda;
+}
+
+
+
 
 /* Desayunar */
 .desayunar {
@@ -191,7 +202,7 @@ main {
 .product__image img {
     width: 100%;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 40px 40px 0 0;
     object-fit: cover;
 }
 
@@ -204,6 +215,19 @@ main {
     flex-basis: 48% !important;
 }
 
+:is(.product) .product__icon, .product__title {
+    text-align: center;
+    margin-bottom: .7em;
+}
+
+.product__title {
+    font-size: 1.3em;
+}
+
+.product__description strong {
+    font-weight: 700;
+    color: #9d3535;
+}
 
 /* footer */
 .main-footer {
